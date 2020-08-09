@@ -574,7 +574,7 @@ services:
 Update pid identifiers to avoid collisions in <metric>_{pid}.db files shared across containers.
 
 ```
-from prometheus_client import Summary, values
+from prometheus_client import values
 from prometheus_client.values import MultiProcessValue
 
 def generate_uid():
